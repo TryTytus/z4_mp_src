@@ -14,7 +14,7 @@ public class DLList extends templates.DLList {
     }
 
     @Override
-    protected void Reset() {
+    public void Reset() {
         this.first = null;
         this.last = null;
         this.size = 0;
@@ -71,8 +71,10 @@ public class DLList extends templates.DLList {
         curLink.next = tmpDLink;
 
         while (curLink.prev != null) {
+            // move to next
             curLink = (DLink) curLink.prev;
 
+            // swap
             tmpDLink = (DLink) curLink.prev;
             curLink.prev = curLink.next;
             curLink.next = tmpDLink;
@@ -80,12 +82,30 @@ public class DLList extends templates.DLList {
         }
 
         this.first = curLink;
-
     }
 
+    /**
+     * CONCAT TRUNCATE LIST IN PARAM!!!!
+     * @param list
+     */
     @Override
     public void ConCatList(templates.DLList list) {
+        if (list.first == null)
+            return;
 
+        if (this.first == null) {
+            this.first = list.first;
+            this.last = list.last;
+            this.size = list.size;
+
+            list.Reset();
+            return;
+        }
+
+        this.last.next = list.first;
+        list.first.prev = this.last;
+        this.size += list.size;
+        list.Reset();
     }
 
     @Override

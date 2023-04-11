@@ -10,7 +10,7 @@ public abstract class DLList {
 
     protected abstract void Init(DLink x);
 
-    protected abstract void Reset();
+    public abstract void Reset();
 
     public abstract void InsertFirst(Car x);
     public abstract void InsertLast(Car x);

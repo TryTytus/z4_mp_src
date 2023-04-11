@@ -5,7 +5,7 @@ public abstract class SLList
     public SLink first;
     public int size;
 
-    public abstract void InsertLast(SLink x);
+    public abstract void InsertFirst(Train x);
     public abstract SLink Find(String searchKey);
     public abstract String Display();
     public abstract SLink FindPrev(String searchKey);

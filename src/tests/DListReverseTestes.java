@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 public class DListReverseTestes {
     @Test
-    public void Reverse1() {
+    public void test1() {
         DLList list = new DLList();
 
         list.Reverse();
