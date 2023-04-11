@@ -22,6 +22,8 @@ public abstract class DLList {
 
     public abstract Car DeleteFirst();
     public abstract Car DeleteLast();
+
+    // tests
     public abstract String Display();
     public abstract String DisplayFromLast();
 }

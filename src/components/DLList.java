@@ -59,6 +59,27 @@ public class DLList extends templates.DLList {
 
     @Override
     public void Reverse() {
+        if (this.first == null)
+            return;
+
+        DLink curLink = this.first;
+        this.last = curLink;
+
+        // swap
+        DLink tmpDLink = (DLink) curLink.prev;
+        curLink.prev = curLink.next;
+        curLink.next = tmpDLink;
+
+        while (curLink.prev != null) {
+            curLink = (DLink) curLink.prev;
+
+            tmpDLink = (DLink) curLink.prev;
+            curLink.prev = curLink.next;
+            curLink.next = tmpDLink;
+
+        }
+
+        this.first = curLink;
 
     }
 
