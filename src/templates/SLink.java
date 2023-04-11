@@ -1,6 +1,6 @@
 package templates;
 
-public abstract class SLink<TRAIN> {
-    public TRAIN info;
-    public SLink<TRAIN> next;
+public abstract class SLink {
+    public Train info;
+    public SLink next;
 }

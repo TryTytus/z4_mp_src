@@ -1,18 +1,27 @@
 package templates;
 
-public abstract class DLList<CAR> {
-    public DLink<CAR> first;
-    public DLink<CAR> last;
+import components.DLink;
+import components.Car;
+
+public abstract class DLList {
+    public DLink first;
+    public DLink last;
     public int size;
 
-    public abstract void InsertFirst(CAR x);
-    public abstract void InsertLast(CAR x);
+    protected abstract void Init(DLink x);
+
+    protected abstract void Reset();
+
+    public abstract void InsertFirst(Car x);
+    public abstract void InsertLast(Car x);
     public abstract void Reverse();
 
-    public abstract void ConCatList(DLList<CAR> list);
+    public abstract void ConCatList(DLList list);
 
     public abstract boolean IsEmpty();
 
-    public abstract CAR DeleteFirst();
-    public abstract CAR DeleteLast();
+    public abstract Car DeleteFirst();
+    public abstract Car DeleteLast();
+    public abstract String Display();
+    public abstract String DisplayFromLast();
 }

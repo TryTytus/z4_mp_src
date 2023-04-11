@@ -1,8 +1,10 @@
 package templates;
 
-public abstract class DLink<CAR> {
-    public DLink<CAR> prev;
-    public CAR info;
-    public DLink<CAR> next;
+import components.Car;
+
+public abstract class DLink {
+    public DLink prev;
+    public Car info;
+    public DLink next;
 
 }

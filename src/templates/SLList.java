@@ -1,16 +1,16 @@
 package templates;
 
-public abstract class SLList<TRAIN>
+public abstract class SLList
 {
-    public SLink<TRAIN> first;
+    public SLink first;
     public int size;
 
-    public abstract void InsertLast(SLink<TRAIN> x);
-    public abstract SLink<TRAIN> Find(String searchKey);
+    public abstract void InsertLast(SLink x);
+    public abstract SLink Find(String searchKey);
     public abstract String Display();
-    public abstract SLink<TRAIN> FindPrev(String searchKey);
+    public abstract SLink FindPrev(String searchKey);
 
-    public abstract TRAIN DeleteAfter(SLink<TRAIN> prevLink);
+    public abstract Train DeleteAfter(SLink prevLink);
 
     public abstract boolean IsEmpty();
 

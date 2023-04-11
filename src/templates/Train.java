@@ -1,12 +1,12 @@
 package templates;
 
-public abstract class Train<T> {
+public abstract class Train {
     public String trainName;
-    public DLList<T> cars;
+    public DLList cars;
 
     @Override
     public abstract String toString();
     public abstract void NewLocAndCar(String newLoc, String newCar);
 
-    public abstract DLList<T> TrainToCarList();
+    public abstract DLList TrainToCarList();
 }

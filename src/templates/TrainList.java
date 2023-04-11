@@ -1,7 +1,7 @@
 package templates;
 
-public abstract class TrainList<TRAIN> {
-    SLink<TRAIN> trainList;
+public abstract class TrainList{
+    SLink trainList;
 
     public abstract void New(String T1, String W);
     public abstract void InsertFirst(String T1, String W);
