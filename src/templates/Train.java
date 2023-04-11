@@ -8,5 +8,5 @@ public abstract class Train<T> {
     public abstract String toString();
     public abstract void NewLocAndCar(String newLoc, String newCar);
 
-    public abstract void TrainToCarList();
+    public abstract DLList<T> TrainToCarList();
 }

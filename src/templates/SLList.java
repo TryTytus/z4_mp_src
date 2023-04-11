@@ -12,4 +12,6 @@ public abstract class SLList<TRAIN>
 
     public abstract TRAIN DeleteAfter(SLink<TRAIN> prevLink);
 
+    public abstract boolean IsEmpty();
+
 }

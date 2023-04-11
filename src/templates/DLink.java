@@ -1,7 +1,8 @@
 package templates;
 
 public abstract class DLink<CAR> {
-    public SLink<CAR> prev;
+    public DLink<CAR> prev;
     public CAR info;
-    public SLink<CAR> next;
+    public DLink<CAR> next;
+
 }
