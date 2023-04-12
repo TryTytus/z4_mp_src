@@ -29,6 +29,7 @@ public class DListConcatTests {
         Assertions.assertEquals("1 ", list1.Display());
         Assertions.assertEquals("1 ", list2.Display());
         Assertions.assertEquals(1, list1.size);
+        Assertions.assertEquals(1, list2.size);
 
         list1.InsertLast(new Car("2"));
         list1.InsertLast(new Car("3"));
@@ -50,6 +51,7 @@ public class DListConcatTests {
         list2.InsertLast(new Car("4"));
         list2.InsertLast(new Car("5"));
         list2.InsertLast(new Car("6"));
+
 
         list1.ConCatList(list2);
 

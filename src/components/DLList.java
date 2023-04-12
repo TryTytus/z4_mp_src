@@ -85,7 +85,7 @@ public class DLList extends templates.DLList {
     }
 
     /**
-     * CONCAT TRUNCATE LIST IN PARAM!!!!
+     * CONCAT TRUNCATES LIST IN PARAM!!!!
      * @param list
      */
     @Override
@@ -105,6 +105,7 @@ public class DLList extends templates.DLList {
         this.last.next = list.first;
         list.first.prev = this.last;
         this.size += list.size;
+        this.last = list.last;
         list.Reset();
     }
 

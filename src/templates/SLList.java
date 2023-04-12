@@ -1,5 +1,8 @@
 package templates;
 
+import components.SLink;
+import components.Train;
+
 public abstract class SLList
 {
     public SLink first;
